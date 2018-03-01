@@ -18,7 +18,6 @@ app.use((req, res, next) => {
   });
 
   app.use(express.static(__dirname + '/public'));
-  sa
   console.log(log);
   fs.appendFile('server.log', log + '\n', (err) => {
     if (err) {
